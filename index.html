@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Batch N3 (Onn 2026-07-15 iPad walk): interactive-widget=resizes-content
+         tells iOS Safari 15.4+ to SHRINK the layout viewport when the on-screen
+         keyboard opens instead of overlapping content. Without it, iOS's own
+         auto-scroll-focused-input-into-view logic sees the layout viewport is
+         still full-height while the visible viewport shrank, and jumps the
+         page all the way to the bottom trying to place the focused input at
+         the middle of the LAYOUT viewport. That's Onn's "type customer name
+         → page scrolls to bottom" bug. Ignored by older iOS (no regression).
+         Same on Chrome mobile Android. Desktop unaffected (no on-screen kb). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="DesignOnnPoint" />
+    <meta name="theme-color" content="#222831" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/pwa-512x512.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://lewcxsbglbtkeeqoocat.supabase.co">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Design Onn Point | Kitchen Remodel Quoting</title>
+    <meta name="description" content="Professional kitchen remodel quoting app with instant price calculations, visual package catalogs, and comprehensive material selections.">
+    <meta name="author" content="Design Onn Point" />
+    <!-- Internal sales / customer-portal app. Token-based URLs
+         (/decision-engine?token=..., /quote-response?token=...) must
+         never end up in a search index. robots.txt also covers this. -->
+    <meta name="robots" content="noindex,nofollow,noarchive" />
+
+
+
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Design Onn Point — Professional Kitchen Remodel Quoting" />
+    <meta property="og:url" content="https://designonnpoint.com/" />
+    <meta property="og:site_name" content="Design Onn Point" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/og-image.png" />
+    <meta name="twitter:image:alt" content="Design Onn Point — Professional Kitchen Remodel Quoting" />
+    <meta property="og:title" content="Design Onn Point | Kitchen Remodel Quoting">
+  <meta name="twitter:title" content="Design Onn Point | Kitchen Remodel Quoting">
+  <meta property="og:description" content="Professional kitchen remodel quoting app with instant price calculations, visual package catalogs, and comprehensive material selections.">
+  <meta name="twitter:description" content="Professional kitchen remodel quoting app with instant price calculations, visual package catalogs, and comprehensive material selections.">
+  <script type="module" crossorigin src="/assets/index-BfxhOy9H.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/supabase-oA5cwLJd.js">
+  <link rel="modulepreload" crossorigin href="/assets/radix-C4rO9Udt.js">
+  <link rel="modulepreload" crossorigin href="/assets/query-cZjvnKxT.js">
+  <link rel="modulepreload" crossorigin href="/assets/react-DYE8Qp39.js">
+  <link rel="modulepreload" crossorigin href="/assets/icons-CFkdALV4.js">
+  <link rel="modulepreload" crossorigin href="/assets/forms-6iJmUvO0.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-NNRJlJW1.css">
+<link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
+
+  <body>
+    <!-- Skip link: first focusable element on every page. Visually hidden
+         until focused by keyboard, then becomes a regular pill button at
+         the top-left. WCAG 2.4.1 (Bypass Blocks) compliance. -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    <div id="root"></div>
+  </body>
+</html>

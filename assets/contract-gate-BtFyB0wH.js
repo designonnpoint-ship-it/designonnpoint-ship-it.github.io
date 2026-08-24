@@ -1,0 +1,1 @@
+const e=["drafting","sent","partially_acked","signed","pending_operator_approval","executed"];function n(t){return typeof t=="string"&&e.includes(t)}const a="Your contract is already signed — call us at (310) 596-0296 to discuss changes.";export{a as C,n as i};

@@ -1,0 +1,1 @@
+const a="1-year workmanship warranty",r="1-year workmanship warranty (materials carry the manufacturer’s warranty)",n="All renovation packages include a $20,000 minimum to cover project management, design consultation, and a 1-year workmanship warranty.";export{n as P,r as W,a};

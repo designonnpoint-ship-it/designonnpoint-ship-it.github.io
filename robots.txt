@@ -1,0 +1,8 @@
+# quotebuilder.designonnpoint.com is the internal sales / customer-portal
+# app, not marketing content. Block all crawlers from indexing any path,
+# including signed token URLs like /decision-engine?token=... which leak
+# session data if they get into a search index. The marketing site at
+# designonnpoint.com is separate and has its own robots.txt.
+
+User-agent: *
+Disallow: /
