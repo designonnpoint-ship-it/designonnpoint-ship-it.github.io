@@ -1,0 +1,1 @@
+const u=["new","old"];function a(o){return o!=null&&o.useProposalLayout?"new":"old"}function r(o,e){const s=o==null?void 0:o.pdfLayout;return s==="new"||s==="old"?s:a(e)}function l(o,e){return r(o,e)==="new"}const n={new:{title:"New",sub:"Five pages, photos of your materials"},old:{title:"Old",sub:"Three pages, materials listed as words"}};export{u as E,n as L,r as l,l as u};
